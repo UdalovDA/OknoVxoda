@@ -15,9 +15,42 @@
             Акватория
         </TextBlock>
 
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="30*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="81*"/>
+                <RowDefinition Height="114*"/>
+                <RowDefinition Height="80*"/>
+            </Grid.RowDefinitions>
+            <Border BorderBrush="Black" BorderThickness="3" CornerRadius="5" HorizontalAlignment="Left" >
+                <Button FontSize="14" Background="White">
+                    Окно пользователя
+                </Button>
+            </Border>
+            <Border Grid.Row="1" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="238,10,243,10">
+                <TextBox HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Width="274" TextWrapping="Wrap" BorderThickness="0">
+
+                </TextBox>
+            </Border>
+            <Border Grid.Row="2" BorderBrush="Black" BorderThickness="3" CornerRadius="20" Margin="238,10,243,10">
+                <PasswordBox HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Width="268" BorderThickness="0">
+
+                </PasswordBox>
+
+            </Border>
+
+            <Border Grid.Row="3" BorderBrush="Black" BorderThickness="3" CornerRadius="5" Margin="238,10,243,10">
+                <Button Background="White" >
+                    Войти
+                </Button>
+            </Border>
+            <Image Margin="360,3,366,3" Grid.Row="4" Source="/c677955dd5a053a88b1d6fdf2f3cd96f-transformed.png" Stretch="Fill"/>
+            <Image Margin="360,3,366,3" Grid.Row="4" Source="/c677955dd5a053a88b1d6fdf2f3cd96f-transformed.png" Stretch="Fill"/>
+        </Grid>
     </Grid>
 
 
-    
-   
+
+
 </Window>
