@@ -1,0 +1,33 @@
+﻿<Window x:Class="OknoVxoda.Worker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OknoVxoda"
+        mc:Ignorable="d"
+        Title="Worker" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="214*"></ColumnDefinition>
+            <ColumnDefinition Width="369*"></ColumnDefinition>
+            <ColumnDefinition Width="217*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="46*"></RowDefinition>
+            <RowDefinition Height="127*"></RowDefinition>
+            <RowDefinition Height="44*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border Grid.Column="1" Grid.Row="1" BorderBrush="Aqua" Background="FloralWhite" BorderThickness="3" CornerRadius="30" Margin="10"></Border>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="20" Margin="10"></TextBlock>
+            <TextBlock Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" FontSize="20" Margin="50,0,0,30">Выберите бокс</TextBlock>
+            <TextBox Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="20,0,70,31" Width="100" Height="20"></TextBox>
+            <Button Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="40">Начать смену</Button>
+        </Grid>
+    </Grid>
+</Window>
